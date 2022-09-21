@@ -123,19 +123,21 @@ main section article {
     transition: all 0.5s;
 
 }
-
+article{
+    border-radius: 10px;
+}
 .descripciones {
     font-size: 16px;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 main section article:hover {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+main section article:hover .descripciones {
     opacity: 1;
 }
-.descripciones:hover {
-     opacity: 1;
-}
+
 
 
 img {
@@ -181,14 +183,16 @@ article {
 .burger {
     text-align: center;
     display: block;
+    
 }
 
 .burger i {
     background-color: #1259c3;
     border-radius: 5px;
     color: white;
-    padding: 1%;
+    padding: 8px;
     font-size: 15px;
+    margin: 5px 0;
 }
 
 .nav {
@@ -266,15 +270,7 @@ footer i {
 
 @media (min-width:361px) {
 
-    .elnav {
-        display: block;
-
-    }
-
-    .burger {
-        display: none;
-    }
-
+  
     .logo {
         max-width: 200px;
 
@@ -293,6 +289,9 @@ footer i {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .burger {
+        display: none;
     }
 
     .elnav {
