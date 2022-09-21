@@ -1,0 +1,81 @@
+.inputs {
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+label{
+    font-size: 15px;
+}
+.fecha{
+    width: 90%;
+    
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 10px;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+
+.categorias-padre {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 5px;
+
+}
+
+.categorias {
+    width: 45%;
+    margin: 3px;
+}
+
+.perfil-padre {
+    margin: 10px 0;
+    padding: 10px 10px;
+
+}
+.perfil-hijo{
+    margin: 0px 7px;
+}
+
+form p {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+button{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #1259c3 ;
+    width: 35%;
+    color: antiquewhite;
+    margin: 5px;
+    
+}
+.subir-archivo{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 15px;
+    
+}
+@media (min-width:361px){
+    
+    .caja{
+            width: 90%;
+    }
+}

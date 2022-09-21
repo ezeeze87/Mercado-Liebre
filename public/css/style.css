@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+*:link,
+*:visited {
+    color: black;
+    text-decoration: none;
+}
+body {
+    background-color: #ebebeb;
+    padding: 0%;
+    margin: 0%;
+}
+/*HEADER*/
+header {
+    text-align: center;
+    background-color: #EAC926;
+    font-weight: bold;
+}
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+
+}
+.logo {
+    width: 45%;
+    padding: 15px 0px;
+    flex-grow: 1;
+
+}
+/*Search Bar*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 60px;
+    padding: 10px 10px;
+    margin: auto;
+    flex-grow: 1;
+    max-height: 45px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 12px;
+    padding: 5px
+}
+
+.search-bar button i {
+    font-size: 14px;
+ 
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+/* BANEER*/
+.banner {
+    text-align: justify;
+    width: 100%;
+
+}
+
+.banner i {
+    width: 100%;
+    text-align: justify;
+}
+/* Main*/
+.divform {
+    margin-bottom: 15px;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+
+}
+
+.bonton {
+    background-color: #03264C;
+    color: #EBEBEB;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+
+
+
+main section article {
+
+    margin-top: 10px;
+    border: solid 1px #ebebeb;
+    margin: 15px;
+    background-color: white;
+    padding: 15px;
+    transition: all 0.5s;
+
+}
+
+.descripciones {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+main section article:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    opacity: 1;
+}
+.descripciones:hover {
+     opacity: 1;
+}
+
+
+img {
+    width: 90%;
+}
+
+
+.compra {
+    text-align: center;
+
+    flex-grow: 1;
+
+}
+
+.elnav {
+    text-decoration-line: none;
+}
+
+
+
+.titular {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+    flex: 3
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    flex: 7;
+}
+
+
+
+article {
+    margin: 10px 10px;
+
+}
+
+.burger {
+    text-align: center;
+    display: block;
+}
+
+.burger i {
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: white;
+    padding: 1%;
+    font-size: 15px;
+}
+
+.nav {
+    display: inline-block;
+    text-decoration: none;
+}
+/* FOOTER*/
+
+footer {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.item {
+    border-top: solid 1px #ebebeb;
+
+}
+
+.item i {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #39b54a;
+    display: block;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    padding: 5px;
+    right: -92%;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+.item i:hover {
+    transform: rotate(-90deg);
+}
+
+ul {
+    padding: 1px;
+    text-align: left;
+    list-style: none;
+
+}
+
+footer ul {
+    margin: auto;
+    text-align: center;
+}
+
+footer i {
+    margin: auto;
+    color: #1259c3;
+    font-size: 2em;
+
+
+}
+
+.elnav {
+    display: none;
+
+}
+
+.flex {
+    display: flex;
+
+
+
+}
+
+
+@media (min-width:361px) {
+
+    .elnav {
+        display: block;
+
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .logo {
+        max-width: 200px;
+
+    }
+
+    .compra {
+
+        padding: 25px 0px 0px 0px;
+       
+    }
+
+}
+
+@media (min-width: 768px) {
+    .productos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .elnav {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    p .compra{
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .elnav a{
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .elnav ul {
+        display: flex;
+    }
+
+    .elnav li {
+        margin: 0 15px;
+    }
+
+    article {
+        flex: 40%;
+    }
+}
+
+@media (min-width:1023px) {
+    
+    .main-header,
+    .elnav {
+        max-width: 1200px;
+        margin: auto;
+        max-height: 200px;
+    }
+    .main-header{
+        padding: 0,7%;
+        margin-left: 14%;
+    }
+
+    .elnav ul {
+        margin: 5 25px;
+    }
+
+    article {
+        flex: 20%;
+    }
+
+    .elfooter {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+
+    }
+
+    .elfooterhijo {
+        display: flex;
+    }
+
+    footer i {
+        transition: all 0.5s;
+    }
+
+    footer i:hover {
+        color: #39b54a;
+    }
+}
