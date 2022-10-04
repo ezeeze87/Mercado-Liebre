@@ -62,14 +62,14 @@
     </header>
     <main>
         <form action="/" method="get" class="formulario">
-            <input class="inputs" type="text" name="Nombre:" placeholder="Nombre Y Apellido" required minlength="3">
-            <input class="inputs" type="text" name="Nombre de usuario:" placeholder="Nombre de usuario" required  minlength="3">
-            <input class="inputs" type="email" name="email" id="email" placeholder="E-mail" required minlength="3">
+            <input class="inputs" type="text" name="Nombre:" placeholder="Nombre Y Apellido"  pattern=".{5,}" title="Cinco o mas caracteres">
+            <input class="inputs" type="text" name="Nombre de usuario:" placeholder="Nombre de usuario" required  pattern=".{5,}" title="Cinco o mas caracteres">
+            <input class="inputs" type="email" name="email" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             <label for="fecha-de-nacimiento">
                 <p>Fecha de nacimiento</p>
             </label>
             <input type="date" name="fecha de nacimiento" id="fecha-de-nacimiento" class="fecha" required>
-            <input class="inputs" type="text" name="Domicilio" placeholder="Domicilio" required minlength="3">
+            <input class="inputs" type="text" name="Domicilio" placeholder="Domicilio" required minlength="5">
             <div class="perfil-padre">
             <p>Perfil de usuario</p><br>
                 <input type="radio" name="perfil" id="comprador" value="comprador" class="perfil-hijo">
@@ -98,9 +98,11 @@
                 </label>
                 <input type="file" accept=".jpg, .png" name="avatar" id="avatar" class="subir-archivo">
             </div>
-            <input class="inputs" type="password" name="password" id="password" placeholder="Password" required minlength="3">
+            <input class="inputs" type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Debe contener al menos una mayuscula,una minuscula y un numero">>
             <input class="inputs" type="password" name="passwordconfirm" id="passwordconfirm"
-                placeholder="Password Confirm" required minlength="3">
+                placeholder="Password Confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Debe contener al menos una mayuscula,una minuscula y un numero">
             <button type="submit">Enviar</button>
             <button type="reset">Borrar</button>
 

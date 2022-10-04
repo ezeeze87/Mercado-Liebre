@@ -318,6 +318,24 @@ footer i {
     article {
         flex: 40%;
     }
+    .elfooter {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+
+    }
+
+    .elfooterhijo {
+        display: flex;
+    }
+
+    footer i {
+        transition: all 0.5s;
+    }
+
+    footer i:hover {
+        color: #39b54a;
+    }
 }
 
 @media (min-width:1023px) {

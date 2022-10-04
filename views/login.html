@@ -59,8 +59,9 @@
     </header>
     <main>
         <form action="/" method="get">
-            <input class="inputs" type="text" name="Nombre de usuario:" placeholder="Nombre de usuario" required>
-            <input class="inputs" type="password" name="password" id="password" placeholder="Password" required >
+            <input class="inputs" type="text" name="Nombre de usuario:" placeholder="Nombre de usuario"  pattern=".{5,}" title="Cionco o mas caracteres">
+            <input class="inputs" type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Debe contener al menos una mayuscula,una minuscula y un numero" >
             <button type="submit">Enviar</button>
         </form>
     </main>
